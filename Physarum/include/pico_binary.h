@@ -1,0 +1,1 @@
+void set_binary_declarations();
