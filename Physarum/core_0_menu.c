@@ -2,7 +2,6 @@
 #include "pico/stdlib.h"
 #include "pico/divider.h"
 #include "pico/bootrom.h"
-//#include "hardware/divider.h"
 #include "include/colony.h"
 #include "include/physarum.h"
 #include "include/core_0_menu.h"
@@ -15,10 +14,10 @@ extern uint32_t Q;
 
 extern uint16_t colony[];
 
-extern uint8_t    ACTIVE_COLONIES;
 extern uint32_t   ITERATIONS;
 extern uint32_t   ITERATION_NUM;
 extern uint16_t   P_VALUE_THRESHOLD;
+extern uint8_t    ACTIVE_COLONIES;
 
 void select_menu_option(char choice) {
 

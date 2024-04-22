@@ -13,7 +13,7 @@
 static const float PICO_PI = 3.14159265358979323846;
 
 bool animate;
-bool BLANK_IMAGE;
+//bool BLANK_IMAGE;
 
 extern uint16_t image;
 
@@ -77,8 +77,6 @@ void __not_in_flash_func(spi_write_st7789)(uint8_t spi_byte) {
   while (spi_is_busy(spi1));
 
   spi_write_blocking(spi1, &spi_byte, 1);
-
- // spi_write16_blocking(spi1, &half_word, 1);
 
 }
 

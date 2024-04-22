@@ -7,9 +7,9 @@
 #include "pico/stdio.h"
 #include "pico/stdlib.h"
 #include "pico/divider.h"
-#include "include/core_0_main.h"
 #include "include/random.h"
 #include "include/physarum.h"
+#include "include/core_0_main.h"
 #include "include/waveshare_st7789.h"
 
 // https://github.com/jlswbs/Pico_ST7789_240x240/tree/main
@@ -23,8 +23,8 @@ extern uint8_t ACTIVE_COLONIES;
 
 void  __not_in_flash_func(nextstep)() {
 
-  int x = 2 * (1 + rand() % LCD_WIDTH_DIV_2 - 1);
-  int y = 2 * (1 + rand() % LCD_HEIGHT_DIV_2 - 1);
+  int x = __fast_mul(2, (1 + rand() % LCD_WIDTH_DIV_2 - 1));
+  int y = __fast_mul(2, (1 + rand() % LCD_HEIGHT_DIV_2 - 1));
 
   if (x_y_grid_check(x, y, 100, 1000)) {
       
@@ -44,7 +44,7 @@ inline void __not_in_flash_func (p_value_small)(int x, int y) {
 
   T = 1 + rand() % 5;
 
-  uint32_t Q2 = Q * 100;
+  uint32_t Q2 = __fast_mul(Q, 100);
 
   switch (T) {
 
@@ -86,7 +86,7 @@ inline void __not_in_flash_func(grid_value_small)(int x, int y) {
 
   Q = div_u32u32(grid[x][y], 100);
 
-  P = grid[x][y] - (Q * 100);
+  P = grid[x][y] - __fast_mul(Q, 100);
 
   if (P < P_VALUE_THRESHOLD) {
 
@@ -104,7 +104,7 @@ inline void __not_in_flash_func(grid_value_medium)(int x, int y) {
 
   Q = div_u32u32(grid[x][y], 100) - 10;
 
-  uint32_t  Q2 = Q * 100;
+  uint32_t Q2 = __fast_mul(Q, 100);
   
   if (grid[x+2][y] == 0) { grid[x+2][y] = Q2; grid[x+1][y] = Q2; }
   if (grid[x][y+2] == 0) { grid[x][y+2] = Q2; grid[x][y+1] = Q2; }

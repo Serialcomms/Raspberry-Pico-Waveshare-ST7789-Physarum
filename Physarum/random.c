@@ -30,10 +30,10 @@ void rndseed() {
     uint32_t random_x = get_rand_32();
     uint32_t random_y = get_rand_32();
     
-    int x = 2 * (5 + random_x % LCD_WIDTH_DIV_2 - 5);
-    int y = 2 * (5 + random_y % LCD_HEIGHT_DIV_2 - 5);
-    
-    if(grid[x][y] == 0) grid[x][y] = 1000 + (i * 100);
+    int x = __fast_mul(2, (5 + random_x % LCD_WIDTH_DIV_2 - 5));
+    int y = __fast_mul(2, (5 + random_y % LCD_HEIGHT_DIV_2 - 5));
+
+    if(grid[x][y] == 0) grid[x][y] = 1000 + __fast_mul(i, 100);
 
   }
   
@@ -58,9 +58,6 @@ uint16_t pico_random_RGB565() {
     random_RGB565 |= (pico_random_R << 11); 
     random_RGB565 |= (pico_random_G << 5); 
     random_RGB565 |= (pico_random_B); 
-
-   // printf("Pico Random RGB, R=%02X, G=%02X, B=%02X, RGB=%04X\n\r", 
-   // pico_random_R, pico_random_G, pico_random_B, random_RGB565);
 
     return random_RGB565; 
 

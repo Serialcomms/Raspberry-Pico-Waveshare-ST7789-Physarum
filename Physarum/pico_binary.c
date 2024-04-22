@@ -19,5 +19,7 @@ void set_binary_declarations() { // for use with Picotool
     bi_decl(bi_1pin_with_name(KEY_B, "Button B"));
     bi_decl(bi_1pin_with_name(KEY_X, "Button X"));
     bi_decl(bi_1pin_with_name(KEY_Y, "Button Y"));
+
+    //bi_program_url("https://github.com/Serialcomms/Raspberry-Pico-Waveshare-ST7789-Physarum");
 }
 
