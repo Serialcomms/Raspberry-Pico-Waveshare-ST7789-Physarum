@@ -1,5 +1,4 @@
 
-void rndseed();
 void physarum_defaults();
 void __not_in_flash_func(nextstep)();
 void __not_in_flash_func(p_value_small)(int x, int y);

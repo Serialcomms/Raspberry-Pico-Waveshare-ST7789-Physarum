@@ -4,6 +4,7 @@
 #include "pico/divider.h"
 #include "hardware/spi.h"
 #include "include/colony.h"
+#include "include/random.h"
 #include "include/physarum.h"
 #include "include/pico_dma.h"
 #include "include/core_1_main.h"
@@ -11,11 +12,6 @@
 #include "include/waveshare_pins.h"
 
 static const float PICO_PI = 3.14159265358979323846;
-
-bool animate;
-//bool BLANK_IMAGE;
-
-extern uint16_t image;
 
 extern uint8_t txbuf[];
 

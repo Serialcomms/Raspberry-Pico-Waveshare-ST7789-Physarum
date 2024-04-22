@@ -3,6 +3,7 @@
 #include "pico/divider.h"
 #include "pico/bootrom.h"
 #include "include/colony.h"
+#include "include/random.h"
 #include "include/physarum.h"
 #include "include/core_0_menu.h"
 #include "include/waveshare_irq.h"

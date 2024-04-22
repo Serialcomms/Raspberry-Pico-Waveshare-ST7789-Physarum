@@ -1,6 +1,7 @@
 
 #include "pico/stdlib.h"
 #include "include/colony.h"
+#include "include/random.h"
 #include "include/physarum.h"
 #include "include/waveshare_irq.h"
 #include "include/waveshare_gpio.h"
