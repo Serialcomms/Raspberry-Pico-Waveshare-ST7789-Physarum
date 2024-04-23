@@ -63,8 +63,7 @@ This demo extends the original by adding functionality for the 5-way Joypad and 
 </p>
 </details>
 
-[Pre-Built UF2 image here]
-(https://github.com/Serialcomms/Raspberry-Pico-Waveshare-ST7789-Physarum/releases/download/Physarum/waveshare_physarum.uf2)
+[Pre-Built UF2 image here](https://github.com/Serialcomms/Raspberry-Pico-Waveshare-ST7789-Physarum/releases/download/Physarum/waveshare_physarum.uf2)
 
 [^1]:https://www.waveshare.com/wiki/Pico-LCD-1.3
 
