@@ -1,10 +1,10 @@
 # Raspberry Pico Waveshare LCD Demo
-# Physarum Growth
+## Physarum Growth
 #### Waveshare 240 x 240 LCD with Joypad + Buttons demo for Raspberry Pico
 
 <img src="Physarum_Demo.gif" alt="Waveshare LCD" title="Waveshare LCD" width="20%" height="20%">
 
-Extensively modified version of [jlswbs Physarum Cellular Automata](https://github.com/jlswbs/Pico_ST7789_240x240/tree/main/Physarum) for
+Extensively modified version of [Physarum Cellular Automata by jlswbs](https://github.com/jlswbs/Pico_ST7789_240x240/tree/main/Physarum) for
 Waveshare 1.3 Inch LCD panel [^1] with Joypad and 4 buttons. 
 
 Major Changes include :
