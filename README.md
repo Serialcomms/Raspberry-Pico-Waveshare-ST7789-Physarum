@@ -1,4 +1,5 @@
-# Raspberry Pico Waveshare LCD Demo - Physarum Growth
+# Raspberry Pico Waveshare LCD Demo
+# Physarum Growth
 #### Waveshare 240 x 240 LCD with Joypad + Buttons demo for Raspberry Pico
 
 <img src="Physarum_Demo.gif" alt="Waveshare LCD" title="Waveshare LCD" width="20%" height="20%">
