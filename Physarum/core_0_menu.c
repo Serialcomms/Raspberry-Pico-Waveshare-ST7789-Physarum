@@ -9,14 +9,10 @@
 #include "include/waveshare_irq.h"
 #include "include/physarum.h"
 
-extern bool animate;
-
 extern uint32_t Q;
 
 extern uint16_t colony[];
 
-extern uint32_t   ITERATIONS;
-extern uint32_t   ITERATION_NUM;
 extern uint16_t   P_VALUE_THRESHOLD;
 extern uint8_t    ACTIVE_COLONIES;
 

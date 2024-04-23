@@ -8,7 +8,6 @@
 #include "include/waveshare_pins.h"
 
 extern uint8_t    ACTIVE_COLONIES;
-extern uint32_t   ITERATIONS;
 extern uint16_t   P_VALUE_THRESHOLD;
 
 void gpio_callback_all(uint gpio, uint32_t events) {
